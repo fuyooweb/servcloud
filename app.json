@@ -1,0 +1,35 @@
+{
+  "name": "mogento",
+  "scripts": {
+  },
+  "env": {
+    "SENDGRID_PASSWORD": {
+      "required": true
+    },
+    "SENDGRID_USERNAME": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "cleardb",
+    "fastly",
+    "herokuconnect",
+    "jawsdb",
+    "logentries",
+    "newrelic",
+    "heroku-postgresql",
+    "heroku-postgresql",
+    "sendgrid",
+    "ssl"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ]
+}
